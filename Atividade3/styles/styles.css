@@ -1,0 +1,167 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+:root {
+
+   --corprincipal: #eaeaf2;
+   --altura-header: 100px;
+}
+
+html {
+   scroll-behavior: smooth;
+
+}
+
+body{
+   font-family: "Space Grotesk", Arial, sans-serif;
+}
+
+main{
+   padding-top: var(--altura-header);
+}
+
+section{
+   scroll-margin-top: var(--altura-header);
+   width: 1300px;
+   margin: 0 auto;
+}
+
+.header-1 {
+   background-color: #1a1a2e;
+   color: white;
+   padding: 15px 0;
+   position: fixed;
+   width: 100%;
+   top: 0;
+}
+
+.nav {
+   width: 960px;
+   margin: 0 auto;
+   overflow: hidden;
+}
+
+.nav-logo {
+   color: var(--corprincipal);
+   text-decoration: none;
+   font-size: bold;
+   font-size: 20px;
+   float: left;
+   padding: 5px 0;
+}
+
+.nav-menu {
+   float: right;
+}
+
+.nav-list {
+   list-style: none;
+}
+
+.nav-item {
+   display: inline-block;
+   margin-left: 20px;
+   margin-top: 10px;
+}
+
+.nav-link {
+   color: var(--corprincipal);
+   text-decoration: none;
+   padding: 5px 10px;
+}
+
+.nav-link:hover {
+   color: #8b3acd;
+   background-color: #b5b5b5;
+   border-radius: 3px;
+}
+
+.container-inicio {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 20px;
+}
+
+
+.home {
+   overflow: hidden;
+}
+
+.texto-padrao {
+   font-family: "Inter", Arial, sans-serif;
+   font-size: 20px;
+   font-style: normal;
+   font-weight: 400;
+   margin-left: 150px;
+   margin-right: 150px;
+   margin-top: 10px;
+   text-align: left;
+   color: black;
+}
+
+.negrito {
+   font-family: "Inter", Arial, sans-serif;
+   font-size: 20px;
+   font-style: normal;
+   font-weight: bold;
+   color: #7209b7;
+}
+
+.subtitulo-secao{
+   font-size: 25px;
+   font-style: normal;
+   font-weight: bold;
+   margin-left: 130px;
+   margin-top: 30px;
+   color: #1b232c;
+}
+
+.titulo-secao {
+   font-size: 30px;
+   font-style: inherit;
+   font-weight: bold;
+   margin-top: 30px;
+   margin-left: 130px;
+   color: #1b232c;
+}
+
+.numeracao-1{
+   font-size: 30px;
+   font-style: inherit;
+   font-weight: bold;
+   color: #f72585;
+}
+
+.numeracao-2{
+   font-size: 25px;
+   font-style: normal;
+   font-weight: bold;
+   margin-left: 20px;
+   color: #f72585;
+}
+
+.lista{
+   margin-top: 10px;
+   padding-left: 20px;
+}
+
+.lista li{
+   margin-bottom: 8px;
+}
+
+footer {
+   background-color: #1a1a2e;
+   color: white;
+   text-align: center;
+   padding: 20px 0;
+   margin-top: 40px;
+}
+ 
+ 
+#footer-title {
+   color: #f72585;
+}
