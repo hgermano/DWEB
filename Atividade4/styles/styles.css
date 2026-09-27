@@ -1,0 +1,254 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+:root {
+   --cor-header: #1a1a2e;
+   --corprincipal: #eaeaf2;
+   --altura-header: 70px;
+   --fonte-titulo: "Playfair Display", Georgia, serif;
+   --fonte-texto: "Inter", Arial, sans-serif;
+}
+
+.titulo-secao, .subtitulo-secao, .subtitulo-noticia, .negrito, .num-amh, .sub-amh {
+   font-family: var(--fonte-titulo);
+}
+
+html {
+   scroll-behavior: smooth;
+
+}
+
+section {
+   scroll-margin-top: var(--altura-header);
+   width: 90%;
+   margin: 0 auto;
+}
+
+.imagem {
+   width: 150px;
+   height: 110px;
+   border-radius: 5px;
+}
+
+.home {
+   overflow: hidden;
+}
+
+.header-1 {
+   background-color: var(--cor-header);
+   border-bottom: 3px solid #C40000;
+   color: white;
+   padding: 2px 0;
+   position: fixed;
+   width: 100%;
+   height: 70px;
+   top: 0;
+}
+
+.nav {
+   width: 100%;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+
+.nav-logo {
+   display: flex;
+   align-items: center;
+   color: var(--corprincipal);
+   text-decoration: none;
+   font-size: bold;
+   font-size: 20px;
+}
+
+.n-logo1 {
+   color: #1056b9
+}
+
+.n-logo2 {
+   color: #ed2828
+}
+
+.nav-list {
+   padding-right: 300px;
+   list-style: none;
+}
+
+.nav-item {
+   display: inline-block;
+   padding-right: 50px;
+   margin-left: 20px;
+}
+
+.nav-link {
+   color: var(--corprincipal);
+   text-decoration: none;
+}
+
+.nav-link:hover {
+   border-bottom: 2px solid #c40000;
+}
+
+.container-atu {
+   margin-top: 20px;
+   display: grid;
+   gap: 40px 60px;
+   margin-left: 10%;
+   margin-right: 10%;
+   grid-template-columns: 1fr 1fr;
+}
+
+.grupo-atu {
+   background: #d8d8eb;
+   display: flex;
+   align-items: center;
+   gap: 20px;
+   padding: 20px 10px;
+   border-radius: 5px;
+}
+
+
+.texto-noticia {
+   font-family: var(--fonte-texto);
+   font-size: 12px;
+   font-style: normal;
+   font-weight: 400;
+   margin-top: 10px;
+   text-align: left;
+   color: black;
+}
+
+.subtitulo-noticia {
+   font-size: 14px;
+   font-style: normal;
+   font-weight: bold;
+   color: #1b232c;
+}
+
+.negrito {
+   font-family: var(--fonte-texto);
+   font-size: 14px;
+   font-style: normal;
+   font-weight: bold;
+   color: #c40000;
+}
+
+.titulo-secao {
+   border-bottom: 2px solid #C40000;
+   font-size: 30px;
+   font-style: oblique;
+   font-weight: bold;
+   color: #1b232c;
+}
+
+.texto-padrao {
+   font-family: var(--fonte-texto);
+   font-size: 18px;
+   font-style: normal;
+   font-weight: 400;
+   margin-top: 10px;
+   text-align: left;
+   color: black;
+}
+
+.subtitulo-secao {
+   font-size: 12px;
+   font-style: normal;
+   font-weight: bold;
+   color: #1b232c;
+}
+
+.box-inicio {
+   display: flex;
+   align-items: center;
+   background-color: var(--cor-header);
+   margin-top: 70px;
+   width: 100%;
+   height: 250px;
+   top: 0;
+   text-align: center;
+}
+
+.titulo-secao-inicio{
+   font-family: var(--fonte-titulo);
+   font-weight: 900;
+   font-size: clamp(28px,5vw,46px);
+   line-height: 1.15;
+   color: #f2cccc;
+   margin: 0 0 16px;
+}
+
+.texto-padrao-inicio{
+   margin: 0;
+   color: #f2cccc;
+   font-size: 16px;
+}
+
+.container-TN{
+   text-align: right;
+}
+
+.container-TN2{
+   float: right;
+}
+
+.tipo-noticia {
+   display: inline-block;
+   font-family: var(--fonte-texto);
+   font-style: italic;
+   font-size: 10px;
+   font-weight: bold;
+   color: black;
+   background: #ff6b6b;
+   border-radius: 2px;
+   padding: 4px 10px;
+}
+
+.pre-texto{
+   padding: 20px 100px;
+}
+
+footer{
+   width: 100%;
+   height: 50px;
+   background-color: var(--cor-header);
+   border-top: 3px solid #C40000;
+   font-family: var(--fonte-texto);
+   font-weight: normal;
+   font-size: 15px;
+   text-align: center;
+   color: white;
+   padding: 5px;
+}
+
+.card-amh{
+   display: flex;
+   align-items: center;
+   width: 100%;
+   height: 20%;
+   gap: 20px;
+   padding: 10px 100px;
+}
+
+.info-amh{
+   padding-left: 5px;
+   border-left: 3px solid var(--cor-header);
+   text-align: center;
+}
+
+.num-amh{
+   font-size: 30px;
+   color: #C40000;
+   width: 45px;
+   text-align: center;
+   flex-shrink: 0;
+}
+
+.sub-amh{
+   text-align: left;
+}
