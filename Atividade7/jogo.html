@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedra, Papel e Tesoura</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="jogo.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <div class="jogo">
+            <div class="infos">
+                <h1>Vamos Jogar Pedra, Papel e Tesoura ?</h1>
+                <h2>Escolha uma das opções a seguir: </h2>
+            </div>
+
+            <div class="box-list">
+                <button class="box" data-escolha="1" data-modal="tela-resultados">
+                    <img src="hand-back-fist-regular-full.svg" alt="Pedra">
+                </button>
+                <button class="box" data-escolha="2" data-modal="tela-resultados">
+                    <img src="hand-regular-full.svg" alt="Papel">
+                </button>
+                <button class="box" data-escolha="3" data-modal="tela-resultados">
+                    <img src="hand-scissors-regular-full.svg" alt="Tesoura">
+                </button>
+            </div>
+        </div>
+
+        <dialog id="tela-resultados">
+            <div class="cabecalho">
+                <button class="close-modal" data-modal="tela-resultados">
+                    <img src="xmark-solid-full.svg" alt="Fecha Modal">
+                </button>
+            </div>
+            <div class="texto-resultado">
+                <div class="resultJogo">
+                    <h3 id="fimJogo">
+                        O resultado vai aqui
+                    </h3>
+                </div>
+                <div class="dados-partida">
+                    <p id="userEsc">
+                        A escolha do usuário vai aqui
+                    </p>
+                    <p id="maquinaEsc">
+                        A escolha da máquina vai aqui
+                    </p>
+                </div>
+            </div>
+
+            <h2>| Para jogar de novo basta fechar essa tela</h2>
+        </dialog>
+    </main>
+</body>
+
+</html>
