@@ -1,1 +1,5 @@
+Login para Admin:
+admin@gmail.com (se não funcionar, tente: 15999999999)
+Senha123**
+
 As telas escolhidas foram o Index e a Dashboard do Admin (mais especificamente o cadastro de serviços). Então... alguns arquivos de telas que faremos futuramente estão vazios ou com funcionalidades incompletas, por exemplo, as telas de agenda tanto do cliente quanto do admin e seus respectivos css e js estão vazios, mas isso será resolvido no futuro. Eu deixei esses arquivos em branco só para não quebrar a lógica de execução das telas quando clicasse nas outras opções da Sidebar das telas principais.
