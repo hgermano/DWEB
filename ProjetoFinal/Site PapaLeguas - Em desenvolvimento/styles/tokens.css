@@ -1,0 +1,29 @@
+:root{
+    /*Cores*/
+    --corBKprincipal: #F5F0E8;
+    --corBKsobre: #e2dacd4d;
+    --corBKcardServicos: #dde6fee5;
+    --corBKlogin-form: #FAFAFA;
+    --corTitulo: #000000;
+    --corTituloAlternativa: #ffffff;
+    --corTexto: #2A2218;
+    --corTextoAlternativa: #f2e7cd;
+    --corPlaceholder: #808080;
+    --corFoco: #613dae;
+    --corBorda: black;
+    --corErro: #c0392b;
+    --corSucesso: #2e7d32;
+    
+
+    /*Header, Rodape e Sidebar*/
+    --corHeader: #2C3480;
+    --corHover: #7a84dd;
+    --corHoverSidebar: hsla(35, 40%, 94%, 0.095);
+    --corTextHeader: #F5F0E8;
+    --corTextHeader-Fraco: hsla(37, 39%, 94%, 0.508); 
+    
+    /*Fontes*/
+    --fonteTitulo: "Lemon Milk", sans-serif, Arial;
+    --fonteTexto: "Coolvetica", sans-serif, Arial;
+    --fonteTextoAlternativa: "Nunito", sans-serif, Arial;
+}

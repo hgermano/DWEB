@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Equipe Solucao em Sistemas">
+    <meta name="description"
+        content="Site de agendamentos do lava rapido Papa Leguas, localzado na cidade de Piedade - SP">
+    <meta name="keywords" content="agendamento, Papa Leguas, Lava Rapido">
+    <title>Dashboard Cliente</title>
+    <link rel="icon" href="../images/icons/favicon.ico" type="image/png">
+    <link rel="stylesheet" href="../styles/tokens.css">
+    <link rel="stylesheet" href="../styles/base.css">
+    <link rel="stylesheet" href="../styles/components.css">
+    <link rel="stylesheet" href="../styles/dashboardCli.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+        integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script src="../javaScript/mascaras.js" defer></script>
+    <script src="../javaScript/dashboardCli.js" defer></script>
+    <script src="../javaScript/funcSidebar.js" defer></script>
+</head>
+
+<body>
+    <nav class="SB-campo" id="sidebar">
+        <div class="SB-top">
+            <div class="SB-img">
+                <img src="../images/logo.svg" alt="Papa-Léguas Lava Rápido">
+            </div>
+            <div class="SB-menu">
+                <ul class="SB-itens">
+                    <li class="SB-interativo SB-ativo">
+                        <a href="./dashboardCli.html" class="SB-link">
+                            <i class="fa-solid fa-user"></i>
+                            Perfil
+                        </a>
+                    </li>
+                    <li class="SB-interativo">
+                        <a href="../index.html" class="SB-link">
+                            <i class="fa-solid fa-house"></i>
+                            Home
+                        </a>
+                    </li>
+                    <li class="SB-interativo">
+                        <a href="./agendaCli.html" class="SB-link">
+                            <i class="fa-solid fa-calendar"></i>
+                            Agendamentos
+                        </a>
+                    </li>
+                    <li class="SB-interativo">
+                        <a href="./suporteCli.html" class="SB-link">
+                            <i class="fa-solid fa-headset"></i>
+                            Suporte
+                        </a>
+                    </li>
+                    <li class="SB-interativo">
+                        <a href="./politicaPrivacidadeCli.html" class="SB-link">
+                            <i class="fa-solid fa-shield-halved"></i>
+                            Privacidade
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="SB-bottom">
+            <button id="logout-btn">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                Logout
+            </button>
+        </div>
+    </nav>
+    <button id="open-sidebar">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+    <main>
+        <section class="user-info">
+            <div class="userInfo-conta">
+                <div class="userInfo-img">
+                    <i class="fa-regular fa-circle-user"></i>
+                    <div class="userInfo-dados">
+                        <p>User</p>
+                        <span>meuemail@gmail.com</span>
+                    </div>
+                </div>
+                <button class="open-modal" data-modal="modal-editEnd">
+                    <i class="fa-solid fa-pen-to-square"></i>
+                </button>
+            </div>
+            <div class="userInfo-endereco">
+                <div class="userInfo-dados">
+                    <p>Numero de Telefone</p>
+                    <span>(00) 12345-6789</span>
+                </div>
+                <div class="userInfo-dados">
+                    <p>CEP</p>
+                    <span>12345-678</span>
+                </div>
+                <div class="userInfo-dados">
+                    <p>Endereço</p>
+                    <span>Rua José Guerreiro</span>
+                </div>
+                <div class="userInfo-dados">
+                    <p>Numero</p>
+                    <span>999</span>
+                </div>
+                <div class="userInfo-dados">
+                    <p>Bairro</p>
+                    <span>31 de Março</span>
+                </div>
+                <div class="userInfo-dados">
+                    <p>Complemento</p>
+                    <span>Bloco X</span>
+                </div>
+            </div>
+        </section>
+        <section class="user-automovel">
+            <div class="auto-modelPlaca">
+                <div class="automovel-modelo">
+                    <p>Meus Carros</p>
+                    <span>Volkswagen Fusca</span>
+                    <span>Renault Kwid</span>
+                </div>
+                <div class="automovel-placa">
+                    <p>Placa</p>
+                    <span>ABC1D23</span>
+                    <span>EFG4H56</span>
+                </div>
+            </div>
+            <button class="open-modal" data-modal="modal-editVeiculo">
+                <i class="fa-solid fa-pen-to-square"></i>
+            </button>
+        </section>
+
+        <dialog id="modal-editEnd">
+            <div class="modal-cabecalho">
+                <h3>Editar Endereço</h3>
+                <button class="close-modal" data-modal="modal-editEnd">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <form method="dialog">
+                <div class="formModal">
+                    <div class="campo">
+                        <label class="campo-label" for="endereco">Endereço</label>
+                        <input class="campo-input" type="text" id="endereco" name="endereco" placeholder="">
+                    </div>
+
+                    <div class="campo">
+                        <label class="campo-label" for="numero">Número</label>
+                        <input class="campo-input" type="text" id="numero" name="numero" placeholder="">
+                    </div>
+
+                    <div class="campo">
+                        <label class="campo-label" for="bairro">Bairro</label>
+                        <input class="campo-input" type="text" id="bairro" name="bairro" placeholder="">
+                    </div>
+
+                    <div class="campo">
+                        <label class="campo-label" for="complemento">Complemento</label>
+                        <input class="campo-input" type="text" id="complemento" name="complemento" placeholder="">
+                    </div>
+                </div>
+                <button class="botao botao-primario" type="submit">Salvar</button>
+            </form>
+        </dialog>
+
+        <dialog id="modal-editVeiculo">
+            <div class="modal-cabecalho">
+                <h3>Meus Veículos</h3>
+                <button class="close-modal" data-modal="modal-editVeiculo">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <button class="botaoBranco open-modal" data-modal="modal-adicionaVeiculo">+ Novo Veículo</button>
+
+            <div class="veiculos-user">
+                <ul class="veiculos-list">
+                    <li class="veiculo-item">
+                        <p>Volkswagen Fusca</p>
+                        <button class="btn-delete">
+                            <i class="fa-solid fa-trash"></i>
+                        </button>
+                        <button class="open-modal" data-modal="modal-editaVeiculo">
+                            <i class="fa-solid fa-pen-to-square"></i>
+                        </button>
+                    </li>
+                    <li class="veiculo-item">
+                        <p>Renault Kwid</p>
+                        <button class="btn-delete">
+                            <i class="fa-solid fa-trash"></i>
+                        </button>
+                        <button class="open-modal" data-modal="modal-editaVeiculo">
+                            <i class="fa-solid fa-pen-to-square"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </dialog>
+
+        <dialog id="modal-adicionaVeiculo">
+            <div class="modal-cabecalho">
+                <h3>Adicionar novo Veículo</h3>
+                <button class="close-modal" data-modal="modal-adicionaVeiculo">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <form method="dialog">
+                <div class="formModal">
+                    <div class="campo">
+                        <label class="campo-label" for="veiculo-marca">Marca</label>
+                        <input class="campo-input" type="text" id="veiculo-marca" name="veiculo-marca"
+                            placeholder="Renault">
+                    </div>
+
+                    <div class="campo">
+                        <label class="campo-label" for="veiculo-modelo">Modelo</label>
+                        <input class="campo-input" type="text" id="veiculo-modelo" name="veiculo-modelo"
+                            placeholder="Kwid">
+                    </div>
+
+                    <div class="campo">
+                        <label class="campo-label" for="veiculo-placa">Placa</label>
+                        <input class="campo-input" type="text" id="veiculo-placa" name="veiculo-placa"
+                            placeholder="ABC1D23">
+                    </div>
+
+                    <div class="campo">
+                        <label class="campo-label" for="veiculo-ano">Ano</label>
+                        <input class="campo-input" type="text" id="veiculo-ano" name="veiculo-ano" placeholder="2024">
+                    </div>
+                </div>
+                <div class="serv-descr">
+                    <div class="campo">
+                        <label class="campo-label" for="veiculo-descr">Descrição Adicional</label>
+                        <textarea class="campo-input" id="veiculo-descr" name="veiculo-descr" rows="3"
+                            placeholder="Não passar cera no interior do carro, pois o propriétário é alérgico"></textarea>
+                    </div>
+                </div>
+
+                <button class="botao botao-primario" type="submit">Salvar</button>
+            </form>
+        </dialog>
+
+        <dialog id="modal-editaVeiculo">
+            <div class="modal-cabecalho">
+                <h3>Editar veículo existente</h3>
+                <button class="close-modal" data-modal="modal-editaVeiculo">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <form method="dialog">
+                <div class="formModal">
+                    <div class="campo">
+                        <label class="campo-label" for="edit-veiculo-marca">Marca</label>
+                        <input class="campo-input" type="text" id="edit-veiculo-marca" name="edit-veiculo-marca" placeholder="">
+                    </div>
+
+                    <div class="campo">
+                        <label class="campo-label" for="edit-veiculo-modelo">Modelo</label>
+                        <input class="campo-input" type="text" id="edit-veiculo-modelo" name="edit-veiculo-modelo" placeholder="">
+                    </div>
+
+                    <div class="campo">
+                        <label class="campo-label" for="edit-veiculo-placa">Placa</label>
+                        <input class="campo-input" type="text" id="edit-veiculo-placa" name="edit-veiculo-placa" placeholder="">
+                    </div>
+
+                    <div class="campo">
+                        <label class="campo-label" for="edit-veiculo-ano">Ano</label>
+                        <input class="campo-input" type="text" id="edit-veiculo-ano" name="edit-veiculo-ano" placeholder="">
+                    </div>
+                </div>
+                <div class="serv-descr">
+                    <div class="campo">
+                        <label class="campo-label" for="edit-veiculo-descr">Descrição Adicional</label>
+                        <textarea class="campo-input" id="edit-veiculo-descr" name="edit-veiculo-descr" rows="3" placeholder=""></textarea>
+                    </div>
+                </div>
+
+                <button class="botao botao-primario" type="submit">Salvar</button>
+            </form>
+        </dialog>
+    </main>
+
+</body>
+
+</html>

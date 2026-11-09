@@ -1,0 +1,208 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: stretch;
+    background-color: var(--corBKprincipal);
+    padding: 2.5rem 1.5rem;
+    min-height: 100vh;
+    width: auto;
+}
+
+section {
+    width: 100%;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: stretch;
+    width: auto;
+    gap: 4rem;
+}
+
+.userInfo-conta {
+    display: flex;
+    align-items: center;
+    align-content: stretch;
+    gap: clamp(2rem, 8vw, 12rem);
+}
+
+.userInfo-img {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.userInfo-img i {
+    font-size: clamp(5rem, 15vw, 8rem);
+}
+
+.userInfo-endereco {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem clamp(2rem, 8vw, 11rem);
+}
+
+.user-automovel {
+    display: flex;
+    align-items: center;
+    gap: clamp(2rem, 8vw, 11rem);
+    border-top: 2px solid hsla(0, 0%, 50%, 0.340);
+    margin-top: 2rem;
+    padding-top: 1rem;
+    width: auto;
+}
+
+.automovel-modelo {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    align-content: stretch;
+    gap: 0.5rem;
+}
+
+.automovel-placa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: stretch;
+    gap: 0.5rem;
+}
+
+.auto-modelPlaca {
+    display: flex;
+    gap: clamp(2rem, 8vw, 14rem);
+}
+
+.userInfo-dados {
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    width: auto;
+}
+
+p {
+    text-align: left;
+    font-family: var(--fonteTexto);
+    font-size: 20px;
+}
+
+span {
+    color: var(--corPlaceholder);
+    font-family: var(--fonteTexto);
+    text-align: left;
+    font-size: 16px;
+}
+
+button {
+    background: none;
+    border: none;
+}
+
+#modal-editEnd[open] {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.formModal {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem 1rem;
+}
+
+.modal-cabecalho {
+    display: flex;
+    gap: 1rem;
+    border-bottom: 2px solid black;
+    padding-bottom: 1rem;
+}
+
+.modal-cabecalho h3{
+    flex: 1;
+}
+
+form .botao {
+    margin-top: 1rem;
+    width: 10rem;
+    align-items: left;
+}
+
+#modal-editVeiculo[open] {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.veiculos-list{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.veiculo-item{
+    display: flex;
+    gap: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid hsla(0, 0%, 50%, 0.340);
+}
+
+.veiculo-item p{
+    flex: 1;
+}
+
+.btn-delete{
+    color: red;
+}
+
+@media (max-width: 600px) {
+    .userInfo-conta {
+        width: 100%;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+
+    .userInfo-img {
+        min-width: 0;
+    }
+
+    .userInfo-dados {
+        min-width: 0;
+        overflow-wrap: anywhere;   
+    }
+
+    .userInfo-endereco {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        width: 100%;
+    }
+
+    .formModal {
+        grid-template-columns: 1fr;
+    }
+
+    dialog {
+        padding: 1.25rem;
+    }
+}
+
+#modal-adicionaVeiculo .campo-input, #modal-editaVeiculo .campo-input{
+    padding: 0.4rem 1.25rem;
+    border-radius: 20px;
+    width: 100%;
+    border: 1px solid var(--corBorda);
+    background-color: #ffffff;
+}
+
+#modal-adicionaVeiculo form, #modal-editaVeiculo form{
+    margin-top: 1rem;
+}
+
+.serv-descr .campo-input{
+    min-height: 5rem;
+    resize: vertical;
+}

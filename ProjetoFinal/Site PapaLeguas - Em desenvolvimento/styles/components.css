@@ -1,0 +1,206 @@
+/* Campo de formulário */
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1.25rem;
+}
+
+.campo-label {
+    font-family: var(--fonteTexto);
+    font-weight: 400;
+}
+
+.campo-input {
+    width: 100%;
+    padding: 0.9rem 1.25rem;
+    border: 1px solid var(--corBorda);
+    border-radius: 999px;
+    background-color: #ffffff;
+}
+
+.campo-input::placeholder {
+    font-family: var(--fonteTexto);
+    font-weight: 400;
+    color: var(--corPlaceholder);
+    opacity: 1;
+}
+
+.campo-input:focus {
+    outline: 3px solid var(--corFoco);
+    border-color: transparent;
+}
+
+/* Botão */
+.botao {
+    display: block;
+    width: 100%;
+    padding: 0.9rem 1.5rem;
+    border: none;
+    border-radius: 999px;
+    font-family: var(--fonteTitulo);
+    font-weight: 400;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.botao-primario {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.botaoBranco {
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    padding: 0.3rem 0.5rem;
+    border-radius: 999px;
+    font-family: var(--fonteTitulo);
+    font-weight: 400;
+    text-transform: uppercase;
+    cursor: pointer;
+    background: none;
+    color: #000000;
+}
+
+.botao:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.texto-mostrar-senha {
+    display: inline-block;
+    font-family: var(--fonteTextoAlternativa);
+    font-weight: 400;
+}
+
+/*Surgiu no login, mas estou sem criatividade para mudar o nome, então vou deixar esse*/
+.interativos-login {
+    text-decoration: none;
+    color: var(--corHeader);
+}
+
+.interativos-login:hover {
+    color: var(--corFoco);
+}
+
+/*Sidebar das telas principais*/
+.SB-campo {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    background-color: var(--corHeader);
+    width: 15rem;
+    height: 100vh;
+    height: 100dvh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: transform 0.3s ease, visibility 0.3s;
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index: 1;
+}
+
+.SB-campo~main {
+    padding-left: 15rem;
+}
+
+.SB-img {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    width: 10rem;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+}
+
+.SB-itens {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    list-style: none;
+}
+
+.SB-interativo {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.SB-link {
+    text-decoration: none;
+    display: flex;
+    gap: 1rem;
+    color: var(--corTextHeader-Fraco);
+    width: 100%;
+    padding: 0.7rem 1.5rem;
+}
+
+.SB-link:hover {
+    color: var(--corTextHeader);
+    background-color: var(--corHoverSidebar);
+    border-left: 0.15rem solid white;
+}
+
+.SB-ativo>.SB-link {
+    background-color: var(--corHoverSidebar);
+    color: var(--corTextHeader);
+    border-left: 0.15rem solid white;
+}
+
+#open-sidebar {
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    background-color: var(--corBKprincipal);
+    padding: 0.4rem;
+    border: none;
+    border-radius: 30%;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.438);
+    visibility: hidden;
+    z-index: 2;
+    transition: left 0.3s ease;
+}
+
+.SB-bottom {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    padding: 1.5rem;
+    margin-top: auto;
+}
+
+#logout-btn {
+    width: 100%;
+    height: 2rem;
+    border-radius: 999px;
+    color: var(--corTextHeader);
+    background: transparent;
+    border: 1.5px solid var(--corTextHeader-Fraco);
+}
+
+@media screen and (max-width: 900px) {
+    .SB-campo {
+        transform: translateX(-100%);
+        visibility: hidden;
+    }
+
+    .SB-campo.SB-aberta {
+        transform: none;
+        visibility: visible;
+    }
+
+    #open-sidebar {
+        visibility: visible;
+    }
+
+    #sidebar.SB-aberta+#open-sidebar {
+        left: 16rem;
+    }
+
+    .SB-campo~main {
+        padding-left: 1.5rem;
+        padding-top: 4.5rem;
+    }
+}

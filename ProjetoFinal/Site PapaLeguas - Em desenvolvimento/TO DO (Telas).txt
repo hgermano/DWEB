@@ -1,0 +1,84 @@
+PROGRESSO: 18/35
+
+TO DO (Telas) :
+
+Publicas: 
+
+- Inicial (index) ~Feito~
+- Login Cliente ~Feito~
+- Login Admin ~Feito~
+- Formulário de Cadastro (Usuário) ~Feito~
+- Formulário de Cadastro primeiro veículo ~Feito~
+- Criar Senha ~Feito~
+- Recuperar Senha ~Feito~
+- Informar código (proveniente do 1° cadastro e recuperação de senha) ~Feito~
+
+Cliente:
+
+- Perfil (dashboard dele) ~Feito~
+- Meus Agendamentos
+- Suporte
+- Politica de Privacidade
+
+Admin:
+
+- Dashboard ~Feito~
+- Agenda Geral
+- Fluxo de Caixa
+- Meus Resultados
+- Meus Clientes
+
+Modais:
+
+Cliente: 
+
+Dashboard{
+
+-- Editar Endereço ~Feito~
+-- Visualizar Veículos ~Feito~
+--- Adicionar Veículos ~Feito~
+--- Editar Veículos ~Feito~
+ }
+
+Agendamento{
+
+-- Selecionar Veículo (selecionar um dia na agenda)
+--- Selecionar Serviço
+---- Confirmação
+}
+
+Admin:
+
+Dashboard{
+
+-- Editar horário ~Feito~
+-- Visualizar Serviços ~Feito~
+--- Editar Serviço ~Feito~
+--- Criar Serviço ~Feito~
+}
+
+Agendamento{
+
+-- Editar disponibilidade
+-- Agendamentos do dia (selecionar um dia na agenda)
+--- Criar Agendamento
+--- Editar Agendamento
+}
+
+Fluxo de Caixa{
+
+-- Registrar Entrada
+-- Registrar Despesa
+}
+
+Meus Clientes{
+
+-- Telinha de filtros de pesquisa
+}
+
+IMPORTANTE:
+
+- Trocar a descrição de todas as telas no final (só copiei e colei)
+- Certificar-se de que todas as telas estão responsivas
+- Criar um Java Script decente pq eles estão completamente aleatórios só para testar funcionalidade das telas
+- Adicionar a opção de (+ adicionar outro) no Formulário de cadastro de veículo

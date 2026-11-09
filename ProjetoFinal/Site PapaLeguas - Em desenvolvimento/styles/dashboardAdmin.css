@@ -1,0 +1,330 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: stretch;
+    background-color: var(--corBKprincipal);
+    padding: 1.5rem 1.5rem;
+    min-height: 100vh;
+    width: auto;
+}
+
+section {
+    width: 100%;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: stretch;
+    width: auto;
+    gap: 1rem;
+}
+
+.userInfo-conta {
+    display: flex;
+    align-items: center;
+    align-content: stretch;
+    gap: clamp(2rem, 8vw, 12rem);
+}
+
+.userInfo-img {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.userInfo-img i {
+    font-size: clamp(5rem, 15vw, 8rem);
+}
+
+.userInfo-horario {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem clamp(3rem, 9vw, 12rem);
+}
+
+.user-servicos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: stretch;
+    gap: 1rem;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    width: auto;
+}
+
+.automovel-modelo {
+    display: flex;
+    align-items: center;
+    align-content: stretch;
+    gap: 0.5rem;
+}
+
+.auto-modelPlaca {
+    display: flex;
+    gap: clamp(2rem, 8vw, 14rem);
+}
+
+.tabela-servicos {
+    display: flex;
+    justify-content: center;
+    align-content: stretch;
+    gap: clamp(2rem, 25vw, 18.5rem);
+}
+
+.userInfo-dados {
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    width: auto;
+}
+
+p,
+h2 {
+    text-align: left;
+    font-family: var(--fonteTexto);
+    font-size: 20px;
+}
+
+h3:not(.modal-cabecalho h3) {
+    font-size: 15px;
+    color: var(--corPlaceholder);
+}
+
+span {
+    color: var(--corPlaceholder);
+    font-family: var(--fonteTexto);
+    text-align: left;
+    font-size: 16px;
+}
+
+.itemLista-serv {
+    color: var(--corTexto);
+    font-family: var(--fonteTexto);
+    text-align: left;
+    font-size: 16px;
+}
+
+button {
+    background: none;
+    border: none;
+}
+
+ul {
+    list-style: none;
+}
+
+#modal-editHorario[open] {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+#modal-editHorario h3:not(.modal-cabecalho h3) {
+    text-align: center;
+}
+
+#modal-editHorario form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+#modal-editHorario form .botao {
+    margin-top: 0.2rem;
+}
+
+.formModal:not(.serv-descr) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.3rem 1rem;
+}
+
+.modal-cabecalho {
+    display: flex;
+    gap: 1rem;
+    border-bottom: 2px solid black;
+    padding-bottom: 1rem;
+}
+
+.modal-cabecalho h3 {
+    flex: 1;
+}
+
+form .botao {
+    margin-top: 1rem;
+    width: 10rem;
+    align-items: left;
+}
+
+#modal-editServicos[open] {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.services-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.services-item {
+    display: flex;
+    gap: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid hsla(0, 0%, 50%, 0.340);
+}
+
+.services-item p {
+    flex: 1;
+}
+
+.btn-delete {
+    color: red;
+}
+
+@media (max-width: 600px) {
+    .userInfo-conta {
+        width: 100%;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+
+    .userInfo-img {
+        min-width: 0;
+    }
+
+    .userInfo-dados {
+        min-width: 0;
+        overflow-wrap: anywhere;
+    }
+
+    .userInfo-horario {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        width: 100%;
+    }
+
+    .formModal:not(.serv-descr) {
+        grid-template-columns: 1fr;
+    }
+
+    .atalhos-item a {
+        width: 8rem;
+        height: 6.5rem;
+    }
+
+    dialog {
+        padding: 1.25rem;
+    }
+}
+
+.user-atalhos {
+    display: flex;
+    align-items: center;
+    align-content: stretch;
+    width: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.atalhos-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+    align-content: stretch;
+}
+
+.atalhos-item a i {
+    font-size: 3.5rem;
+    color: black;
+}
+
+.atalhos-item a {
+    background-color: white;
+    width: 10rem;
+    height: 8rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 4px 10px rgba(0, 0, 0, 0.226);
+    text-decoration: none;
+}
+
+.atalhos-item a:hover {
+    transform: translateY(-4px);
+}
+
+.tabela-horarios {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+    align-content: stretch;
+}
+
+.tabHora-titulo,
+.tabServ-titulo {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid hsla(0, 0%, 50%, 0.340);
+    padding-bottom: 0.5rem;
+}
+
+.coluna-horarios {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    align-content: stretch;
+    width: 100%;
+}
+
+input[type="checkbox"] {
+    margin-left: 1rem;
+    width: 20px;
+    height: 20px;
+}
+
+.services-def {
+    display: flex;
+    align-items: left;
+    align-content: stretch;
+    gap: 1.5rem;
+}
+
+.services-item p {
+    margin-left: 2rem;
+}
+
+#modal-criaServico .campo-input,
+#modal-editaServico .campo-input {
+    padding: 0.4rem 1.25rem;
+    border-radius: 20px;
+    width: 100%;
+    border: 1px solid var(--corBorda);
+    background-color: #ffffff;
+}
+
+#modal-criaServico form,
+#modal-editaServico form {
+    margin-top: 1rem;
+}
+
+.serv-descr .campo-input {
+    min-height: 5rem;
+    resize: vertical;
+}

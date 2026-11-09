@@ -1,0 +1,32 @@
+main {
+    width: 100%;
+    height: auto;
+    background-color: var(--corBKprincipal);
+}
+
+.cadastro-form {
+    display: flex;
+    box-shadow: 5px 4px 10px rgba(0, 0, 0, 0.538);
+    width: min(60rem, 100%);         
+    margin: 0 auto;
+    background-color: var(--corBKlogin-form);
+}
+
+.info-form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    gap: 1rem;
+    padding: clamp(1.25rem, 5vw, 5rem);
+    width: 100%;
+}
+
+.info-form h2{
+    text-align: center;
+}
+
+.info-form .botao {
+    max-width: 10rem;
+    margin-left: auto;     
+}

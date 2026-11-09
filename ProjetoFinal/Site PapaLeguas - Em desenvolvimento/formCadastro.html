@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Equipe Solucao em Sistemas">
+    <meta name="description"
+        content="Site de agendamentos do lava rapido Papa Leguas, localzado na cidade de Piedade - SP">
+    <meta name="keywords" content="agendamento, Papa Leguas, Lava Rapido">
+    <title>Formulário de Cadastro</title>
+    <link rel="icon" href="./images/icons/favicon.ico" type="image/png">
+    <link rel="stylesheet" href="./styles/tokens.css">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/components.css">
+    <link rel="stylesheet" href="./styles/formCadastro.css">
+    <script src="./javaScript/mascaras.js" defer></script>
+    <script src="./javaScript/formCadastro.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <section class="cadastro-form">
+            <div class="info-form">
+                <h2>Formulário de Registro de Usuário</h2>
+
+                <form id="form-login" data-destino="./codigoVerif.html?origem=cadastro">
+                    <div class="align-info">
+                        <div class="campo">
+                            <label class="campo-label" for="nome">Nome Completo</label>
+                            <input class="campo-input" type="text" id="nome" name="nome" placeholder="Luís Silva"
+                                required>
+                        </div>
+
+                        <div class="campo">
+                            <label class="campo-label" for="telefone">Número de telefone</label>
+                            <input class="campo-input" type="tel" id="telefone" name="telefone"
+                                placeholder="(15) 12345-6789" autocomplete="tel" inputmode="tel" maxlength="15"
+                                pattern="\(\d{2}\) \d{5}-\d{4}" required>
+                        </div>
+
+                        <div class="campo">
+                            <label class="campo-label" for="email">Email</label>
+                            <input class="campo-input" type="email" id="email" name="email" autocomplete="email"
+                                inputmode="email" placeholder="Seu email@gmail.com"
+                                required>
+                        </div>
+
+                        <div class="campo">
+                            <label class="campo-label" for="cep-user">CEP</label>
+                            <input class="campo-input" type="text" id="cep-user" name="cep-user" placeholder="12345-123"
+                                inputmode="numeric" maxlength="8" pattern="[0-9]+">
+                        </div>
+
+                        <div class="campo">
+                            <label class="campo-label" for="endereco">Endereço</label>
+                            <input class="campo-input" type="text" id="endereco" name="endereco"
+                                placeholder="José Almirante" required>
+                        </div>
+
+                        <div class="campo">
+                            <label class="campo-label" for="bairro">Bairro</label>
+                            <input class="campo-input" type="text" id="bairro" name="bairro" placeholder="Cotianos"
+                                required>
+                        </div>
+
+                        <div class="campo">
+                            <label class="campo-label" for="num-casa">Número</label>
+                            <input class="campo-input" type="text" id="num-casa" name="num-casa" placeholder="n° 123"
+                                inputmode="numeric" maxlength="10" pattern="[0-9]+" required>
+                        </div>
+
+                        <div class="campo">
+                            <label class="campo-label" for="complemento">Complemento</label>
+                            <input class="campo-input" type="text" id="complemento" name="complemento"
+                                placeholder="Bloco X (opcional)">
+                        </div>
+                    </div>
+                    <button class="botao botao-primario" type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+</body>
+
+</html>

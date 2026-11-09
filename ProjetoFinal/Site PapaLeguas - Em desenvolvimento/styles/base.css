@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
+
+@font-face {
+   font-family: "Lemon Milk";
+   src: url("../fonts/LEMONMILK-Regular.woff2") format("woff2");
+   font-weight: 400;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: "Lemon Milk";
+   src: url("../fonts/LEMONMILK-Medium.woff2") format("woff2");
+   font-weight: 500;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: "Lemon Milk";
+   src: url("../fonts/LEMONMILK-Bold.woff2") format("woff2");
+   font-weight: 700;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: "Coolvetica";
+   src: url("../fonts/Coolvetica-Regular.woff2") format("woff2");
+   font-weight: 400;
+   font-style: normal;
+   font-display: swap;
+}
+
+*:not(dialog){
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html {
+   scroll-behavior: smooth;
+}
+
+img {
+   display: block;
+   max-width: 100%;
+   height: auto;
+   object-fit: cover;
+}
+
+h1,
+h2,
+h3,
+h4 {
+   font-family: var(--fonteTitulo);
+   font-weight: normal;
+   color: var(--corTitulo);
+}
+
+p,
+ul {
+   font-family: var(--fonteTexto);
+   font-weight: normal;
+   color: var(--corTexto);
+}
+
+a {
+   font-family: var(--fonteTexto);
+   font-weight: normal;
+}
+
+input,
+button,
+textarea {
+   font: inherit;
+   font-family: var(--fonteTexto);
+}
+
+button{
+   cursor: pointer;
+}
+
+dialog{
+   border: none;
+   border-radius: 30px;
+   padding: 2rem;
+   width: 42rem;             
+   box-sizing: border-box;   
+}
+
+dialog::backdrop{
+   background-color: rgba(0, 0, 0, 0.5);
+}

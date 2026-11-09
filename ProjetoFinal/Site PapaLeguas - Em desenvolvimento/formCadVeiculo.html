@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Equipe Solucao em Sistemas">
+    <meta name="description"
+        content="Site de agendamentos do lava rapido Papa Leguas, localzado na cidade de Piedade - SP">
+    <meta name="keywords" content="agendamento, Papa Leguas, Lava Rapido">
+    <title>Adição do Primeiro Veículo</title>
+    <link rel="icon" href="./images/icons/favicon.ico" type="image/png">
+    <link rel="stylesheet" href="./styles/tokens.css">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/components.css">
+    <link rel="stylesheet" href="./styles/formCadVeiculo.css">
+    <script src="./javaScript/mascaras.js" defer></script>
+    <script src="./javaScript/formCadastro.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <section class="cadastro-form">
+            <div class="info-form">
+                <h2>Adicione o seu primeiro veículo</h2>
+
+                <form id="form-login" data-destino="./login.html">
+                    <div class="align-info">
+                        <div class="campo">
+                            <label class="campo-label" for="marca-veiculo">Marca</label>
+                            <input class="campo-input" type="text" id="marca-veiculo" name="marca-veiculo"
+                                placeholder="Renault" required>
+                        </div>
+
+                        <div class="campo">
+                            <label class="campo-label" for="modelo-veiculo">Modelo</label>
+                            <input class="campo-input" type="text" id="modelo-veiculo" name="modelo-veiculo"
+                                placeholder="Kwid" required>
+                        </div>
+
+                        <div class="campo">
+                            <label class="campo-label" for="placa-veiculo">Placa</label>
+                            <input class="campo-input" type="text" id="placa-veiculo" name="placa-veiculo"
+                                placeholder="PQR2R43">
+                        </div>
+
+                        <div class="campo">
+                            <label class="campo-label" for="ano-veiculo">Ano</label>
+                            <input class="campo-input" type="text" id="ano-veiculo" name="ano-veiculo"
+                                inputmode="numeric" maxlength="4" pattern="[0-9]+" placeholder="2026" required>
+                        </div>
+
+                        <div class="campo">
+                            <label class="campo-label" for="obser-veiculo">Observações</label>
+                            <input class="campo-input" type="text" id="obser-veiculo" name="obser-veiculo"
+                                placeholder="Retrovisor direito está quebrado, então cuidado!">
+                        </div>
+                    </div>
+                    <button class="botao botao-primario" type="submit">Adicionar</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+</body>
+
+</html>

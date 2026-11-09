@@ -1,0 +1,69 @@
+main {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 1rem;
+    background-color: var(--corBKprincipal);
+}
+
+.senha-card {
+    display: grid;
+    place-items: center;
+    width: min(40rem, 100%);         
+    min-height: 35rem;
+    padding: 1rem;
+    border-radius: 4rem;
+    background-color: var(--corBKlogin-form);
+    box-shadow: 5px 4px 10px rgba(0, 0, 0, 0.538);
+}
+
+.senha-form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    gap: 1rem;
+    text-align: center;
+}
+
+.senha-form h2 {
+    font-family: var(--fonteTexto);
+    font-size: 2rem;
+}
+
+.regras {
+    list-style: none;
+    display: grid;
+    gap: 0.4rem;
+}
+
+.regra {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    color: var(--corErro);          
+}
+
+.regra::before {
+    content: "✕";                   
+    width: 1.25rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+.regra.atendida {
+    color: var(--corSucesso);     
+}
+
+.regra.atendida::before {
+    content: "✓";
+}
+
+.regra[hidden] {
+    display: none;
+}
+
+.senha-form .botao {
+    max-width: 12rem;
+    margin: auto;     
+}

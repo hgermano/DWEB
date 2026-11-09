@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Equipe Solucao em Sistemas">
+    <meta name="description"
+        content="Site de agendamentos do lava rapido Papa Leguas, localzado na cidade de Piedade - SP">
+    <meta name="keywords" content="agendamento, Papa Leguas, Lava Rapido">
+    <title>Login - Admin</title>
+    <link rel="icon" href="./images/icons/favicon.ico" type="image/png">
+    <link rel="stylesheet" href="./styles/tokens.css">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/components.css">
+    <link rel="stylesheet" href="./styles/login.css">
+
+</head>
+
+<body>
+    <main>
+        <div class="card-login">
+            <a class="interativos-login" href="./login.html">← Login de Cliente</a>
+            <section class="login-form">
+                <div class="info-form">
+                    <h2>Login administrador</h2>
+
+                    <form id="form-login" data-destino="./admin/dashboardAdmin.html">
+    <div class="align-info">
+        <div class="campo">
+            <label class="campo-label" for="email">E-mail</label>
+            <input class="campo-input" type="email" id="email" name="email"
+                placeholder="admin@exemplo.com" autocomplete="username" required>
+        </div>
+
+                            <div class="campo">
+                                <label class="campo-label" for="senha">Senha</label>
+                                <input class="campo-input" type="password" id="senha" name="senha"
+                                    placeholder="•••••••••••" autocomplete="current-password" required>
+                            </div>
+                            <div class="info-senha">
+                                <label><input type="checkbox" id="mostrar-senha"> <p class="texto-mostrar-senha">Mostrar senha</p></label>
+                                <a class="interativos-login" href="./codigoVerif.html?origem=recuperacao">Esqueceu sua Senha?</a>
+                            </div>
+                        </div>
+                        <p class="form-erro" id="erro-login" role="alert" hidden></p>
+                        <button class="botao botao-primario" type="submit">Entrar</button>
+                    </form>
+                </div>
+                <aside class="login-marca">
+                    <img src="./images/logo.svg" alt="Papa-Léguas Lava Rápido">
+                </aside>
+            </section>
+        </div>
+    </main>
+    <script type="module" src="./javaScript/paginas/login-admin.js"></script>
+</body>
+
+</html>

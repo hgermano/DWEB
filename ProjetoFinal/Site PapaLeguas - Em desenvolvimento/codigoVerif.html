@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Equipe Solucao em Sistemas">
+    <meta name="description"
+        content="Site de agendamentos do lava rapido Papa Leguas, localzado na cidade de Piedade - SP">
+    <meta name="keywords" content="agendamento, Papa Leguas, Lava Rapido">
+    <title>Autenticação de conta</title>
+    <link rel="icon" href="./images/icons/favicon.ico" type="image/png">
+    <link rel="stylesheet" href="./styles/tokens.css">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/components.css">
+    <link rel="stylesheet" href="./styles/codigoVerif.css">
+    <script src="./javaScript/mascaras.js" defer></script>
+    <script src="./javaScript/codigoVerif.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <section class="codigo-card">
+            <form id="form-codigo" class="codigo-form">
+                <h2 id="titulo-codigo">Digite o código</h2>
+
+                <div class="codigo-grupo" role="group" aria-labelledby="titulo-codigo">
+                    <input class="codigo-digito" type="text" inputmode="numeric" maxlength="1" pattern="[0-9]"
+                        autocomplete="one-time-code" aria-label="Dígito 1 de 4" required>
+                    <input class="codigo-digito" type="text" inputmode="numeric" maxlength="1" pattern="[0-9]"
+                        aria-label="Dígito 2 de 4" required>
+                    <input class="codigo-digito" type="text" inputmode="numeric" maxlength="1" pattern="[0-9]"
+                        aria-label="Dígito 3 de 4" required>
+                    <input class="codigo-digito" type="text" inputmode="numeric" maxlength="1" pattern="[0-9]"
+                        aria-label="Dígito 4 de 4" required>
+                </div>
+
+                <input type="hidden" id="codigo" name="codigo">
+
+                <p>Não recebeu o código no seu email? <a class="interativos-login" href="#">Clique aqui</a></p>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
